@@ -1,0 +1,7 @@
+{
+  "name": "zapMessenger",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
