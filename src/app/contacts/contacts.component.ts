@@ -5,13 +5,15 @@ const { CapContacts } = Plugins;
 import { fromEvent } from 'rxjs';
 
 @Component({
-  selector: 'app-tab2',
-  templateUrl: 'tab2.page.html',
-  styleUrls: ['tab2.page.scss']
+  selector: 'app-contacts',
+  templateUrl: './contacts.component.html',
+  styleUrls: ['./contacts.component.scss'],
 })
-export class Tab2Page {
+export class ContactsComponent implements OnInit{
+ 
+  constructor() { }
 
-  constructor() {}
+  ngOnInit(){}
 
   /*
   source of CapContactsPlugin:

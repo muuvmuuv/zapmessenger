@@ -1,0 +1,12 @@
+<header>Recent Chats
+<button><icon name =  "settings"></button>
+</header>
+<div *ngIf "chats == 0">
+<p>No recent chats</p>
+</div>
+<div *ngIf "chats != 0">
+<ol>
+<li *ngFor "let i in contacts"><icon name ="profpic">{{name}}{{lastseen}} </li>
+<ol>
+<button><icon name = "newchat"></button>
+</div>

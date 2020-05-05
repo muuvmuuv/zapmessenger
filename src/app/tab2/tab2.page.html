@@ -6,12 +6,41 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
+<ion-content>
   <ion-header collapse="condense">
     <ion-toolbar>
       <ion-title size="large">Tab 2</ion-title>
     </ion-toolbar>
-  </ion-header>
+</ion-header>
+
+<div>
+  <input type="text" placeholder="Search"><button><ion-icon name="search-outline"></ion-icon></button>
+</div>
+  <ol>
+    <li *ngFor="let c of contactsList">{{c.name}} {{c.phoneNumber}}</li>
+  </ol>
+  <div *ngIf="newContactAvailable">
+    <form>
+      <ul>
+        <li>
+          <input type="text" id="name" placeholder="First Name">
+        </li>
+        <li>
+          <input type="text" id="mail" placeholder="Last Name">
+        </li>
+        <li>
+          <input type="number" id="mail" placeholder="Phone Number">
+        </li>
+       </ul>
+    </form>
+  </div>
+  
+  
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button>
+      <ion-icon name="arrow-forward-circle"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
 
   <app-explore-container name="Tab 2 page"></app-explore-container>
 </ion-content>

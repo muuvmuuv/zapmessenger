@@ -1,0 +1,23 @@
+<header>Contacts</header>
+<div>
+<input type="text" placeholder="Search"><button><icon name="plus"></button>
+</div>
+<ol>
+  <li *ngFor="let c of contactsList">{{c.name}} {{c.phoneNumber}}</li>
+</ol>
+<div *ngIf="newContactAvailable">
+  <form>
+    <ul>
+      <li>
+        <input type="text" id="name" placeholder="First Name">
+      </li>
+      <li>
+        <input type="text" id="mail" placeholder="Last Name">
+      </li>
+      <li>
+        <input type="number" id="mail" placeholder="Phone Number">
+      </li>
+     </ul>
+  </form>
+</div>
+<button id="createContact"><icon name = "plus"></icon></button>
