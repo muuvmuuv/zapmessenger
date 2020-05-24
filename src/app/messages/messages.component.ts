@@ -1,25 +1,23 @@
 import { Component, OnInit } from '@angular/core';
-import { of, Observable } from 'rxjs';
+//import { of, Observable } from 'rxjs';
 import { fromEvent } from 'rxjs';
+//import { Router, ActivatedRoute, ParamMap } from '@angular/router';
 
 @Component({
   selector: 'app-messages',
   templateUrl: './messages.component.html',
   styleUrls: ['./messages.component.scss'],
 })
-export class MessagesComponent implements OnInit {
+export class MessagesComponent{
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit() {}
-
-  //Properties of second person app users
+  //Properties of second person app user
 user = {
   name,
   dateLastSeen(){
   }
 }
-
 
 //Function that reports time that user was last online
 dateLastSeen(){}
@@ -33,8 +31,7 @@ sendButton = document.getElementById('send');
 sendData = fromEvent(this.sendButton, 'click');
 
 upload = this.sendData.subscribe(
-  
-  
+    
 )
 
 
@@ -57,3 +54,4 @@ document.createElement("div").content(value);
 
 
 }
+

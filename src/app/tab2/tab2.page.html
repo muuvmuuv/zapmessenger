@@ -1,24 +1,27 @@
-<ion-header [translucent]="true">
+<ion-header translucent="true">
   <ion-toolbar>
-    <ion-title>
-      Tab 2
-    </ion-title>
+    <ion-title>Contacts</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content fullscreen="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
+      <ion-title size="large">Contacts</ion-title>
     </ion-toolbar>
-</ion-header>
+    <ion-toolbar>
+      <ion-searchbar></ion-searchbar>
+    </ion-toolbar>
+  </ion-header>
 
-<div>
-  <input type="text" placeholder="Search"><button><ion-icon name="search-outline"></ion-icon></button>
-</div>
-  <ol>
-    <li *ngFor="let c of contactsList">{{c.name}} {{c.phoneNumber}}</li>
-  </ol>
+  <div>
+    <ion-list>
+      <ion-item *ngFor="let c of contactsList">
+        <ion-icon name="person-outline"></ion-icon>{{c.name}} {{c.phoneNumber}}
+      </ion-item>
+    </ion-list>
+  </div>
+
   <div *ngIf="newContactAvailable">
     <form>
       <ul>
@@ -31,16 +34,17 @@
         <li>
           <input type="number" id="mail" placeholder="Phone Number">
         </li>
-       </ul>
+      </ul>
     </form>
   </div>
-  
-  
+
+
   <ion-fab vertical="bottom" horizontal="end" slot="fixed">
     <ion-fab-button>
-      <ion-icon name="arrow-forward-circle"></ion-icon>
+      <ion-icon name="person-add-outline"></ion-icon>
     </ion-fab-button>
   </ion-fab>
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+
+
 </ion-content>

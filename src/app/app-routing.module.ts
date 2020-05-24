@@ -1,16 +1,26 @@
 import { NgModule } from '@angular/core';
-import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
+import { BrowserModule } from '@angular/platform-browser';
 
+import { Tab1PageModule } from './tab1/tab1.module';
+import { TabsPage } from './tabs/tabs.page';
+
+//const defaultRoute = "/tabs"
 const routes: Routes = [
   {
-    path: '',
-    loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule)
+    path: '', loadChildren: './tabs/tabs.module#TabsPageModule'
+  },
+  { 
+    path: 'messages', loadChildren: './messages/messages.module#MessagesModule'
   }
-];
+]
+
 @NgModule({
   imports: [
-    RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules })
+    RouterModule.forRoot(routes
+      //,{ preloadingStrategy: PreloadAllModules }
+    )
   ],
   exports: [RouterModule]
 })
-export class AppRoutingModule {}
+export class AppRoutingModule { }

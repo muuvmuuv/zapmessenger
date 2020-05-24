@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "zapmessenger-18980": {
+      "hosting": {
+        "app": [
+          "zapmessenger-18980"
+        ]
+      }
+    }
+  }
+}

@@ -1,7 +1,8 @@
-<header>Contacts</header>
+
 <div>
-<input type="text" placeholder="Search"><button><icon name="plus"></button>
+  <input type="text" placeholder="Search"><button><icon name="plus"></button>
 </div>
+
 <ol>
   <li *ngFor="let c of contactsList">{{c.name}} {{c.phoneNumber}}</li>
 </ol>

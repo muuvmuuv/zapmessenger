@@ -50,6 +50,27 @@ export class Tab2Page {
     CapContacts.storeContact();
   }
   )
-  
-
+  /*sample phonebook
+  contactsList = [
+    {"name": "Richard", "phoneNumber": "0796379342"},
+    {"name": "Marjorie", "phoneNumber": "0796379342"},
+    {"name": "Luther", "phoneNumber": "0796379342"},
+    {"name": "Clark", "phoneNumber": "0796379342"},
+    {"name": "Jeremy", "phoneNumber": "0796379342"},
+    {"name": "Apron", "phoneNumber": "0796379342"},
+    {"name": "Donald", "phoneNumber": "0796379342"},
+    {"name": "Dalot", "phoneNumber": "0796379342"},
+    {"name": "Raymond", "phoneNumber": "0796379342"},
+    {"name": "Will", "phoneNumber": "0796379342"},
+    {"name": "Othiniel", "phoneNumber": "0796379342"},
+    {"name": "Redmond", "phoneNumber": "0796379342"},
+    {"name": "Dreyfus", "phoneNumber": "0796379342"},
+    {"name": "Abra", "phoneNumber": "0796379342"},
+    {"name": "Brahm", "phoneNumber": "0796379342"},
+    {"name": "Scott", "phoneNumber": "079569342"},
+    {"name": "Kirk", "phoneNumber": "0765379342"},
+    {"name": "Pike", "phoneNumber": "0796379234"},
+    {"name": "Julian", "phoneNumber": "0793429342"},
+    {"name": "Maggie", "phoneNumber": "0796349342"},  
+  ];*/
 }

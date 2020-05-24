@@ -3,7 +3,17 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  firebaseConfig: {
+    apiKey: "AIzaSyA4TYqSui9knN68FwH0ehsxB-89jBOJmWw",
+    authDomain: "zapmessenger-18980.firebaseapp.com",
+    databaseURL: "https://zapmessenger-18980.firebaseio.com",
+    projectId: "zapmessenger-18980",
+    storageBucket: "zapmessenger-18980.appspot.com",
+    messagingSenderId: "889295126388",
+    appId: "1:889295126388:web:6d16f2e66aad9bab763621",
+    measurementId: "G-EP999RZ76D"
+  }
 };
 
 /*

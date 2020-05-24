@@ -1,17 +1,43 @@
-<ion-header [translucent]="true">
+<ion-header translucent="true">
   <ion-toolbar>
-    <ion-title>
-      Tab 1
-    </ion-title>
+    <ion-title>Recent-Chats</ion-title>
   </ion-toolbar>
 </ion-header>
+
 
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
+      <ion-title size="large">Recent Chats</ion-title>
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <div>
+    <ion-text color="medium" style="text-align: center;" *ngIf="chats == 0">
+      <h3>No recent chats</h3>
+
+      <ion-button (click) = accessMessages()>
+        <ion-icon slot="start" name="add"></ion-icon>
+        Sample chat
+      </ion-button>
+
+    </ion-text>
+  </div>
+
+  <div *ngIf="chats != 0">
+    <ion-list>
+      <ion-item *ngFor="let i of imbox">
+        {{ i.name }},
+        {{ i.hint }},
+        {{ i.lastseen }} </ion-item>
+    </ion-list>
+  </div>
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button>
+      <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
 </ion-content>
+
+<ion-router-outlet></ion-router-outlet>

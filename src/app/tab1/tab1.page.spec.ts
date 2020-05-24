@@ -1,7 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { IonicModule } from '@ionic/angular';
 import { ExploreContainerComponentModule } from '../explore-container/explore-container.module';
-
+import { Router } from '@angular/router'
 import { Tab1Page } from './tab1.page';
 
 describe('Tab1Page', () => {
@@ -23,3 +23,5 @@ describe('Tab1Page', () => {
     expect(component).toBeTruthy();
   });
 });
+
+
