@@ -6,16 +6,11 @@ import { TabsPage } from './tabs.page';
 
     {
       path: '',
-      redirectTo: '/tabs/tab1',
-      pathMatch: 'full'
-    },
-    {
-      path: 'tabs',
-      component: TabsPage,
+# component: Some wrapper component here if wanted
       children: [
         {
           path: '',
-          redirectTo: '/tabs/tab1',
+          redirectTo: 'tab1',
           pathMatch: 'full'
         },
         {
